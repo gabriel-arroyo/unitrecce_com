@@ -24,6 +24,7 @@
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/creative.min.css" rel="stylesheet">
   <link href="css/chat.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/login.css">
 
 </head>
 
@@ -60,6 +61,26 @@
           </li>
         </ul>
       </div>
+      <ul class="nav navbar-nav navbar-right ml-auto">
+        <li class="nav-item dropdown">
+          <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#"><i class="fa fa-user-o"></i> Login</a>
+          <ul class="dropdown-menu">
+            <li>
+              <form class="form-inline login-form" action="miscursos.html" method="GET" target="_self">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                  <input type="text" class="form-control" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                  <input type="password" class="form-control" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </nav>
 
