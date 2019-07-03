@@ -1,0 +1,62 @@
+/* Color Theme Swatches in Hex */
+.LM-sotme-1-hex {
+    color: #253340;
+}
+
+.LM-sotme-2-hex {
+    color: #364959;
+}
+
+.LM-sotme-3-hex {
+    color: #F2E0D0;
+}
+
+.LM-sotme-4-hex {
+    color: #F2762E;
+}
+
+.LM-sotme-5-hex {
+    color: #F2D8D5;
+}
+
+/* Color Theme Swatches in RGBA */
+.LM-sotme-1-rgba {
+    color: rgba(36, 51, 63, 1);
+}
+
+.LM-sotme-2-rgba {
+    color: rgba(54, 73, 89, 1);
+}
+
+.LM-sotme-3-rgba {
+    color: rgba(242, 223, 207, 1);
+}
+
+.LM-sotme-4-rgba {
+    color: rgba(242, 117, 45, 1);
+}
+
+.LM-sotme-5-rgba {
+    color: rgba(242, 216, 212, 1);
+}
+
+/* Color Theme Swatches in HSLA */
+.LM-sotme-1-hsla {
+    color: hsla(208, 26, 19, 1);
+}
+
+.LM-sotme-2-hsla {
+    color: hsla(207, 24, 28, 1);
+}
+
+.LM-sotme-3-hsla {
+    color: hsla(28, 56, 88, 1);
+}
+
+.LM-sotme-4-hsla {
+    color: hsla(22, 88, 56, 1);
+}
+
+.LM-sotme-5-hsla {
+    color: hsla(6, 52, 89, 1);
+}

@@ -1,0 +1,62 @@
+/* Color Theme Swatches in Hex */
+.Ateneu-Popular-1-hex {
+    color: #FD7200;
+}
+
+.Ateneu-Popular-2-hex {
+    color: #FF5314;
+}
+
+.Ateneu-Popular-3-hex {
+    color: #6591A2;
+}
+
+.Ateneu-Popular-4-hex {
+    color: #F9FEFD;
+}
+
+.Ateneu-Popular-5-hex {
+    color: #050505;
+}
+
+/* Color Theme Swatches in RGBA */
+.Ateneu-Popular-1-rgba {
+    color: rgba(253, 114, 0, 1);
+}
+
+.Ateneu-Popular-2-rgba {
+    color: rgba(255, 82, 20, 1);
+}
+
+.Ateneu-Popular-3-rgba {
+    color: rgba(100, 144, 161, 1);
+}
+
+.Ateneu-Popular-4-rgba {
+    color: rgba(249, 253, 253, 1);
+}
+
+.Ateneu-Popular-5-rgba {
+    color: rgba(4, 4, 4, 1);
+}
+
+/* Color Theme Swatches in HSLA */
+.Ateneu-Popular-1-hsla {
+    color: hsla(27, 100, 49, 1);
+}
+
+.Ateneu-Popular-2-hsla {
+    color: hsla(16, 100, 53, 1);
+}
+
+.Ateneu-Popular-3-hsla {
+    color: hsla(196, 24, 51, 1);
+}
+
+.Ateneu-Popular-4-hsla {
+    color: hsla(168, 71, 98, 1);
+}
+
+.Ateneu-Popular-5-hsla {
+    color: hsla(0, 0, 1, 1);
+}
