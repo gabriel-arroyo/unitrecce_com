@@ -8,12 +8,15 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+/* html {
+  font-size: calc(1em + 1vw)
+} */
 
 body {
   background: #fff;
   color: #666666;
-  /* font-family: "Open Sans", sans-serif; */
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
 }
 
 a {
@@ -34,7 +37,7 @@ p {
   margin: 0 0 30px 0;
 }
 
-h1.ctitle {
+/* h1.ctitle {
   font-family: 'Hammersmith One', sans-serif;
   font-weight: 400;
   margin: 0 0 0px 0;
@@ -60,7 +63,7 @@ h3.ctitle {
   font-size: 30px;
   color: #6591A2;
 }
-
+ */
 
 h1,
 h2,
@@ -68,8 +71,8 @@ h3,
 h4,
 h5,
 h6 {
-  /* font-family: "Montserrat", sans-serif; */
-  font-family: 'Hammersmith One', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: 'Hammersmith One', sans-serif; */
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -258,12 +261,29 @@ h6 {
   text-align: center;
 }
 
-#intro h2 {
+#intro h1 {
+  font-family: 'Hammersmith One', sans-serif;
   color: #fff;
-  margin-bottom: 30px;
-  font-size: 48px;
+  /* margin-bottom: 30px; */
+  font-size: calc(4em + 1vw);
+  /* font-size: 4em; */
   font-weight: 700;
 }
+
+#intro h2 {
+  color: #fff;
+  margin-top: 40px;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+#intro h3 {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
 
 #intro p {
   width: 80%;
@@ -318,8 +338,8 @@ h6 {
 }
 
 #intro .btn-get-started {
-  /* font-family: "Montserrat", sans-serif; */
-  font-family: 'Hammersmith One', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: 'Hammersmith One', sans-serif; */
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -414,8 +434,8 @@ h6 {
   text-decoration: none;
   display: inline-block;
   color: #fff;
-  font-family: 'Hammersmith One', sans-serif;
-  /* font-family: "Montserrat", sans-serif; */
+  /* font-family: 'Hammersmith One', sans-serif; */
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 13px;
   text-transform: uppercase;
@@ -517,8 +537,8 @@ h6 {
   display: block;
   outline: none;
   font-weight: 700;
-  /* font-family: "Montserrat", sans-serif; */
-  font-family: 'Hammersmith One', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: 'Hammersmith One', sans-serif; */
 }
 
 #mobile-nav ul li a:hover {
@@ -836,8 +856,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-btn {
-  /* font-family: "Montserrat", sans-serif; */
-  font-family: 'Hammersmith One', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: 'Hammersmith One', sans-serif; */
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -870,8 +890,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #skills .progress .skill {
   /* font-family: "Open Sans", sans-serif; */
-  /* font-family: "Montserrat", sans-serif; */
-  font-family: 'Hammersmith One', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: 'Hammersmith One', sans-serif; */
   line-height: 35px;
   padding: 0;
   margin: 0 0 0 20px;
@@ -917,8 +937,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #facts .counters span {
-  /* font-family: "Montserrat", sans-serif; */
-  font-family: 'Hammersmith One', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: 'Hammersmith One', sans-serif; */
   font-weight: bold;
   font-size: 48px;
   display: block;
@@ -928,8 +948,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 #facts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  /* font-family: "Montserrat", sans-serif; */
-  font-family: 'Hammersmith One', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: 'Hammersmith One', sans-serif; */
   font-size: 14px;
   color: #6591A2;
 }
@@ -1414,8 +1434,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 0 20px 0;
   padding: 2px 0 2px 10px;
   line-height: 1;
-  /* font-family: "Montserrat", sans-serif; */
-  font-family: 'Hammersmith One', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: 'Hammersmith One', sans-serif; */
   font-weight: 700;
   letter-spacing: 3px;
   border-left: 4px solid #FD7200;
@@ -1426,7 +1446,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Montserrat", sans-serif;
-  font-family: 'Hammersmith One', sans-serif;
+  /* font-family: 'Hammersmith One', sans-serif; */
   color: #eee;
 }
 
