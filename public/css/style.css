@@ -12,6 +12,11 @@
   font-size: calc(1em + 1vw)
 } */
 
+.responsive {
+	width 20%;
+	height: auto;
+}
+
 body {
   background: #fff;
   color: #666666;
@@ -836,6 +841,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
+#services ul .mylist {
+  font-size: 14px;
+  position: relative;
+  margin-left: 90px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
 /* Call To Action Section
 --------------------------------*/
 
@@ -1648,5 +1661,10 @@ a.primary {
 }
 
 span.secondary {
+  color: #FD7200;
+}
+
+span.dot {
+	size:14px;
   color: #FD7200;
 }
