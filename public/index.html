@@ -38,7 +38,33 @@
 </head>
 
 <body>
+  <!-- Messenger plugin de chat Code -->
+  <div id="fb-root"></div>
 
+  <!-- Your plugin de chat code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "111061933575715");
+    chatbox.setAttribute("attribution", "biz_inbox");
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v10.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
   <!--==========================
     Header
   ============================-->
@@ -46,7 +72,7 @@
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-       <!-- <h1><a href="#intro" class="scrollto">uni<span class="secondary">tr</span>ecce<span
+        <!-- <h1><a href="#intro" class="scrollto">uni<span class="secondary">tr</span>ecce<span
 	       class="secondary">.</span></a></h1>-->
         <!-- Uncomment below if you prefer to use an image logo -->
         <a href="#intro"><img src="img/logo.png" height="42" width="110" alt="" title="" /></a>
@@ -88,7 +114,7 @@
             <div class="carousel-background"><img src="img/intro-carousel/1.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-		<img src="img/logo.png" alt="Logo" style="width:340px;height:110px">
+                <img src="img/logo.png" alt="Logo" style="width:340px;height:110px">
                 <h3 class="ctitle"> Trabajo y educación</h3>
                 <h2 class="ctitle">Transformamos la experiencia</h2>
                 <a href="#featured-services" class="btn-get-started scrollto">Cursos</a>
@@ -100,7 +126,7 @@
             <div class="carousel-background"><img src="img/intro-carousel/2.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-		<img src="img/logo.png" alt="Logo" style="width:340px;height:110px">
+                <img src="img/logo.png" alt="Logo" style="width:340px;height:110px">
                 <h3 class="ctitle"> Trabajo y educación</h3>
                 <h2 class="ctitle">Certificamos el trabajo</h2>
                 <a href="#featured-services" class="btn-get-started scrollto">Cursos</a>
@@ -112,7 +138,7 @@
             <div class="carousel-background"><img src="img/intro-carousel/3.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-		<img src="img/logo.png" alt="Logo" style="width:340px;height:110px">
+                <img src="img/logo.png" alt="Logo" style="width:340px;height:110px">
                 <h3 class="ctitle"> Trabajo y educación</h3>
                 <h2 class="ctitle">Incrementamos tu productividad</h2>
                 <a href="#featured-services" class="btn-get-started scrollto">Cursos</a>
@@ -179,9 +205,11 @@
 
         <header class="section-header wow fadeInUp">
           <h3>Nuestra Empresa</h3>
-          <p>Somos una empresa especializada en el desarrollo tecnológico de herramientas de capacitación y certificación.
-            <h3>Propuesta de valor</h3>
-            <p>Dar valor a la experiencia de trabajo con acciones específicas que generen un ambiente de conocimiento que motive e incremente la productividad en la empresa.
+          <p>Somos una empresa especializada en el desarrollo tecnológico de herramientas de capacitación y
+            certificación.
+          <h3>Propuesta de valor</h3>
+          <p>Dar valor a la experiencia de trabajo con acciones específicas que generen un ambiente de conocimiento que
+            motive e incremente la productividad en la empresa.
         </header>
 
 
@@ -191,21 +219,25 @@
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
             <h4 class="title"><a href="">Misión</a></h4>
-            <p class="description">Brindar experiencias de Capacitación Digital, con base a convertir procesos y experiencias en Conocimientos Tangibles, que sean ágilmente gestionables, recuperables y transmisibles; y que disminuyan la curvas de aprendizaje del personal, y por ende aumenten la competitividad y la productividad de los colaboradores.</p>
+            <p class="description">Brindar experiencias de Capacitación Digital, con base a convertir procesos y
+              experiencias en Conocimientos Tangibles, que sean ágilmente gestionables, recuperables y transmisibles; y
+              que disminuyan la curvas de aprendizaje del personal, y por ende aumenten la competitividad y la
+              productividad de los colaboradores.</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-eye-outline"></i></div>
             <h4 class="title"><a href="">Visión</a></h4>
-            <p class="description">Ser el referente latinoamericano en la conversión de trabajo en Educación, y ser líderes reconocidos por aumentar la competencia y elevar la productividad de nuestros clientes.</p>
+            <p class="description">Ser el referente latinoamericano en la conversión de trabajo en Educación, y ser
+              líderes reconocidos por aumentar la competencia y elevar la productividad de nuestros clientes.</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
             <h4 class="title"><a href="">Valores</a></h4>
-		    <p class="description"><b>Interés genuino</b> en las necesidades de nuestros clientes</p>
-		    <p class="description"><b>Pasión</b> por el poder de la formación profesional a través del trabajo.</p>
-		    <p class="description"><b>Compromiso</b> por cumplir las expectativas de nuestros clientes.</p>
-		    <p class="description"><b>Innovacion constante</b> con procesos de mejora enfocados a la productividad</p>
-		    <p class="description"><b>Respetuosos</b> de la diversidad, del pensamiento y de las personas</p>
+            <p class="description"><b>Interés genuino</b> en las necesidades de nuestros clientes</p>
+            <p class="description"><b>Pasión</b> por el poder de la formación profesional a través del trabajo.</p>
+            <p class="description"><b>Compromiso</b> por cumplir las expectativas de nuestros clientes.</p>
+            <p class="description"><b>Innovacion constante</b> con procesos de mejora enfocados a la productividad</p>
+            <p class="description"><b>Respetuosos</b> de la diversidad, del pensamiento y de las personas</p>
           </div>
         </div>
 
@@ -232,7 +264,8 @@
                 <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
               </div>
               <h2 class="title"><a href="#">Impartición de cursos presenciales</a></h2>
-              <p>Contamos con expertos certificados en temas que generan valor y van dirigidos a incrementar la productividad, la cultura de la eficiencia, disminuir el stress al buscar mejorar el clima laboral:</p>
+              <p>Contamos con expertos certificados en temas que generan valor y van dirigidos a incrementar la
+                productividad, la cultura de la eficiencia, disminuir el stress al buscar mejorar el clima laboral:</p>
               <ul>
                 <li>Curso de Introducción a la Administración</li>
                 <li>Curso de Desarrollo Organizacional</li>
@@ -241,11 +274,11 @@
                 <li>Curso de Introducción a la Calidad</li>
                 <li>Curso de Comunicación Efectiva</li>
               </ul>
-	      <b>Cursos especiales</b>
-	      <ul>
-		      <li>¡Todo depende de ti! Coaching ontológico!</li>
-		      <li>¡Usa bien tu mente! Zhieng Qigong</li>
-	      </ul>
+              <b>Cursos especiales</b>
+              <ul>
+                <li>¡Todo depende de ti! Coaching ontológico!</li>
+                <li>¡Usa bien tu mente! Zhieng Qigong</li>
+              </ul>
             </div>
           </div>
 
@@ -276,7 +309,9 @@
               </div>
               <h2 class="title"><a href="#">Plataforma empresarial de gestión del conocimiento</a></h2>
               <p>
-	      Obtendrás de manera practica la forma de mantener el conocimiento de tu organización (Gestión del conocimiento) y tus procesos de capacitación al día y a la vanguardia, personalizando la capacitación por área, departamento y para cada colaborador, para una rápida creación y seguimiento de:
+                Obtendrás de manera practica la forma de mantener el conocimiento de tu organización (Gestión del
+                conocimiento) y tus procesos de capacitación al día y a la vanguardia, personalizando la capacitación
+                por área, departamento y para cada colaborador, para una rápida creación y seguimiento de:
               </p>
               <ul>
                 <li>Programa DNC (detección de necesidades e capacitación)</li>
@@ -400,7 +435,7 @@
     <section id="portfolio" class="section-bg">
       <div class="container">
 
-   <!--     <header class="section-header">
+        <!--     <header class="section-header">
           <h3 class="section-title">Nuestros cursos</h3>
         </header>
 
@@ -565,11 +600,11 @@
 
       </div>
     </section><!-- #portfolio -->
-    -->
-    <!--==========================
+        -->
+        <!--==========================
       Clients Section
     ============================-->
-    <!-- <section id="clients" class="wow fadeInUp">
+        <!-- <section id="clients" class="wow fadeInUp">
       <div class="container">
 
         <header class="section-header">
@@ -589,12 +624,12 @@
 
       </div>
     </section> -->
-    <!-- #clients -->
+        <!-- #clients -->
 
-    <!--==========================
+        <!--==========================
       Clients Section
     ============================-->
-    <!-- <section id="testimonials" class="section-bg wow fadeInUp">
+        <!-- <section id="testimonials" class="section-bg wow fadeInUp">
       <div class="container">
 
         <header class="section-header">
@@ -667,12 +702,12 @@
 
       </div>
     </section> -->
-    <!-- #testimonials -->
+        <!-- #testimonials -->
 
-    <!--==========================
+        <!--==========================
       Team Section
     ============================-->
-    <!-- <section id="team">
+        <!-- <section id="team">
       <div class="container">
         <div class="section-header wow fadeInUp">
           <h3>Team</h3>
@@ -757,79 +792,82 @@
 
       </div>
     </section> -->
-    <!-- #team -->
+        <!-- #team -->
 
-    <!--==========================
+        <!--==========================
       Contact Section
     ============================-->
-    <section id="contact" class="section-bg wow fadeInUp">
-      <div class="container">
+        <section id="contact" class="section-bg wow fadeInUp">
+          <div class="container">
 
-        <div class="section-header">
-          <h3>Contacto</h3>
-          <p>Ponte en contacto con nosotros y pon en marcha tu capacitación.</p>
-        </div>
-
-        <div class="row contact-info">
-
-          <div class="col-md-4">
-            <div class="contact-address">
-              <i class="ion-ios-location-outline"></i>
-              <h3>Dirección</h3>
-              <address>Ciudad de México, México</address>
+            <div class="section-header">
+              <h3>Contacto</h3>
+              <p>Ponte en contacto con nosotros y pon en marcha tu capacitación.</p>
             </div>
-          </div>
 
-          <div class="col-md-4">
-            <div class="contact-phone">
-              <i class="ion-ios-telephone-outline"></i>
-              <h3>Teléfono</h3>
-              <p><a href="tel:+00525539350522">+00 52 55 3935 0522</a></p>
-            </div>
-          </div>
+            <div class="row contact-info">
 
-          <div class="col-md-4">
-            <div class="contact-email">
-              <i class="ion-ios-email-outline"></i>
-              <h3>Email</h3>
-              <p><a href="mailto:info@unitrecce.app">info@unitrecce.app</a></p>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="form">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4"
-                  data-msg="Por favor ingresa al menos 4 caracteres" />
-                <div class="validation"></div>
+              <div class="col-md-4">
+                <div class="contact-address">
+                  <i class="ion-ios-location-outline"></i>
+                  <h3>Dirección</h3>
+                  <address>Ciudad de México, México</address>
+                </div>
               </div>
-              <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Correo electrónico"
-                  data-rule="email" data-msg="Por favor ingresa un correo válido" />
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto"
-                data-rule="minlen:4" data-msg="Por favor ingresa al menos 8 caracteres" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required"
-                data-msg="Por favor escríbenos un mensaje" placeholder="Mensaje"></textarea>
-              <div class="validation"></div>
-            </div>
-            <div class="text-center"><button type="submit">Enviar mensaje</button></div>
-          </form>
-        </div>
 
-      </div>
-    </section><!-- #contact -->
+              <div class="col-md-4">
+                <div class="contact-phone">
+                  <i class="ion-ios-telephone-outline"></i>
+                  <h3>Teléfono</h3>
+                  <p><a href="tel:+00525539350522">+00 52 55 3935 0522</a></p>
+                  <p><a href="tel:+00525539350522">+00 52 844 275 2218</a></p>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="contact-email">
+                  <i class="ion-ios-email-outline"></i>
+                  <h3>Email</h3>
+                  <p><a href="mailto:info@unitrecce.app">info@unitrecce.com</a></p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre"
+                    data-rule="minlen:4" data-msg="Por favor ingresa al menos 4 caracteres" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-row">
+
+                  <div class="form-group col-md-6">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Correo electrónico"
+                      data-rule="email" data-msg="Por favor ingresa un correo válido" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Teléfono"
+                      data-rule="minlen:4" data-msg="Por favor ingresa al menos 8 caracteres" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <textarea class="form-control" name="message" id="message" rows="5" data-rule="required"
+                    data-msg="Por favor escríbenos un mensaje" placeholder="Mensaje"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit">Enviar mensaje</button></div>
+              </form>
+            </div>
+
+          </div>
+        </section><!-- #contact -->
 
   </main>
 
@@ -842,9 +880,9 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-		  <!-- <h3>uni<span class="secondary">tr</span>ecce<span class="secondary">.</span></h1>-->
-		<img src="img/logo.png" alt="Logo" style="width:280px;height:95px">
-              <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies
+            <!-- <h3>uni<span class="secondary">tr</span>ecce<span class="secondary">.</span></h1>-->
+            <img src="img/logo.png" alt="Logo" style="width:280px;height:95px">
+            <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies
               darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo.
               Amet volutpat consequat mauris nunc congue.</p> -->
           </div>
@@ -929,8 +967,11 @@
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
 
+  <!-- email -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
 
 </body>
 

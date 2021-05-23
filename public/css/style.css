@@ -13,7 +13,7 @@
 } */
 
 .responsive {
-	width 20%;
+	width: 20%;
 	height: auto;
 }
 
@@ -96,8 +96,8 @@ h6 {
   line-height: 1;
   font-size: 16px;
   border-radius: 50%;
-  right: 15px;
-  bottom: 15px;
+  right: 33px;
+  bottom: 95px;
   transition: background 0.5s;
   z-index: 11;
 }
